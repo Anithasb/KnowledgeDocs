@@ -1,0 +1,42 @@
+
+A few words about performance testing…
+Performance testing determines the capabilities of a system, by measuring the below items:
+
+Processing Time — The time taken by the server to process a request.
+Latency — The delay involved for a request to reach the server and back.
+Response Time — The total time it takes from when a user makes a request until they receive a response. 
+The Response Time equals the Processing Time + Latency
+Throughput — Indicates the number of transactions per second an application can handle.
+Scalability — Measures an application’s ability to scale up or scale out, in terms of any of its non-functional capability.
+These items feed into the following types of tests:
+
+
+Load testing — Tests the maximum amount of load that can be placed on a system or software.
+Stress testing — Tests the different failure and recovery points of a system to gauge its parameters for stable operation.
+Endurance testing — Tests the operation of a system under normal levels of load over a prolonged amount of time.
+Scalability testing — Helps to gauge the ability of a system to cope with higher levels of non-functional parameters, 
+such as the volume of requests, data and users.
+Spike testing — It tests the behaviour of a system when it comes under sudden, large volumes of load.
+Volume testing — Tests the volume of data that can be processed by a system.
+
+
+What can performance tests do for your business?
+
+Load testing can monitor the system’s response times for each of the transactions during a set period of time. 
+This type of monitoring can provide a lot of useful information, especially for business managers and stakeholders, 
+who look for conclusions based on these results, along with any data to support these findings. 
+Load testing can also bring attention to any problems in the application software, allowing engineers to fix 
+these bottlenecks before they become more problematic.
+
+The problem with traditional performance tests (or synchronous processing)
+Most traditional performance testing tools work like this:
+
+1 virtual user = 1 Thread
+50 virtual users = 50 Threads
+10,000 virtual users = 10,000 Threads
+
+If you have 10,000 requests running simultaneously, most of the time your threads will be sleeping. 
+There will probably be lots of context switching and lots of CPU utilisation will occur at the time of process scheduling. 
+This approach consumes approximately 60% to 70% of CPU and memory at the time of execution, 
+which degrades the system performance. Under this methodology, the user waits for the server response when sending a request. 
+This is sometimes called Synchronous processing.
